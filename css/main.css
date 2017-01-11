@@ -98,20 +98,115 @@ textarea {
 
 body{
   padding: 0 20px;
+  background-color: #2b2b2b;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
 }
 img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 95%;
   max-width: 740px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 10vh;
+  background-color: red;
+  color: #fff;
 }
 
 
 
+#sign-up {
+  margin-top: 50px;
+}
+#mc_embed_signup{
+  width: 505px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+#mc_embed_signup h2{
+  font-weight: 100;
+  font-size: 20px;
+  padding: 0 5px;
+  color: #f4f4f4;
+  letter-spacing: 1px;
+}
+#mc_embed_signup #mce-EMAIL{
+  float: left;
+  background: #cccccc;
+  border: 0;
+  height: 35px;
+  font-size: 19px;
+  color: #2b2b2b;
+  padding-left: 10px;
+  width: 370px;
+  border-radius: 5px;
+}
+#mc-embedded-subscribe{
+  float: left;
+  height: 37px;
+  color: #2b2b2b;
+  background: #cccccc;
+  border: none;
+  text-transform: uppercase;
+  margin-left: 5px;
+  padding:0 20px;
+  font-weight: 100;
+  border-radius: 5px;
+  font-size: 19px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #727272;
+    font-weight: 100;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #727272;
+   font-weight: 100;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #727272;
+   font-weight: 100;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #727272;
+   font-weight: 100;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    #727272;
+  font-weight: 100;
+}
+
+
+@media (max-width: 767px) {
+  #sign-up {
+
+  }
+  #mc_embed_signup{
+    width: auto;
+  }
+  #mc_embed_signup h2{
+    font-size: 20px;
+    text-align: center;
+  }
+  #mc_embed_signup #mce-EMAIL{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #mc-embedded-subscribe{
+    width: 100%;
+  }
+}
 
 
 
